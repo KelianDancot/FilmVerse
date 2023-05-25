@@ -1,3 +1,4 @@
+<!-- ======= Header ======= -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,10 +34,8 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
+    <div class="container-fluid d-flex align-items-center justify-content-center">
       <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <i class="bi bi-camera-reels"></i>
         <h1>FilmVerse</h1>
       </a>
