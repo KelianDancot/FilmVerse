@@ -34,24 +34,28 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid d-flex align-items-center justify-content-center">
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <a href="index.php" class="logo d-flex align-items-center  me-auto me-lg-0">
         <i class="bi bi-camera-reels"></i>
         <h1>FilmVerse</h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="index.php" class="active">Accueil</a></li>
           <li class="dropdown"><a href="#"><span>Films</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="gallery.html">Populaire</a></li>
-              <li><a href="gallery.html">Du Moment</a></li>
-              <li><a href="gallery.html">À Venir</a></li>
-              <li><a href="gallery.html">Les Mieux Notés</a></li>
+              <li><a href="gallery.php">Populaire</a></li>
+              <li><a href="gallery.php">Du Moment</a></li>
+              <li><a href="gallery.php">À Venir</a></li>
+              <li><a href="gallery.php">Les Mieux Notés</a></li>
             </ul>
           </li>
         </ul>
       </nav><!-- .navbar -->
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
     </div>
   </header><!-- End Header -->
