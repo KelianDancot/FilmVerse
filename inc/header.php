@@ -28,6 +28,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Movie CSS File -->
+  <link href="assets/css/movie.css" rel="stylesheet">
 </head>
 
 <body>
@@ -54,7 +56,7 @@
         </ul>
       </nav><!-- .navbar -->
         <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2" type="search" placeholder="Search" id="search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
     </div>

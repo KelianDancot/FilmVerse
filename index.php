@@ -16,8 +16,8 @@
   </section><!-- End Hero Section -->
 
   <!-- ======= Main Section ======= -->
-  <main id="main" data-aos="fade" data-aos-delay="1500"> 
-
+  <main id="main" class="main" data-aos="fade" data-aos-delay="1500"> 
+    
   </main><!-- End #main -->
 
   <div>
