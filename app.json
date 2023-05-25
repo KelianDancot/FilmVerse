@@ -1,0 +1,5 @@
+{
+    "API_KEY": "f447ea150f76b57989d83f371eb03942",
+    "API_TOKEN": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNDQ3ZWExNTBmNzZiNTc5ODlkODNmMzcxZWIwMzk0MiIsInN1YiI6IjY0NmYxZjQyZTIyZDI4MTZiMDk0NmFkNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TvlMwrVRajf9kXbyMywugucLFqcizKHeKpu3w0lXnq0",
+    "BASE_URL": "https://api.themoviedb.org/3/movie/157336"
+}
