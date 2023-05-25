@@ -39,7 +39,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  <!-- Film Script JS File -->
+  <script src="app.js"></script>
 
 </body>
-
 </html>
