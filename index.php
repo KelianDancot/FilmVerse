@@ -12,9 +12,6 @@
         </div>
       </div>
     </div>
-    <div>
-      <h2 class="py-1">Latest Release</h2>
-    </div>
   </section><!-- End Hero Section -->
 
   
