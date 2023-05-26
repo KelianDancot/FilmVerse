@@ -7,9 +7,8 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6 text-center">
-          <h2>I'm <span>Jenny Wilson</span> a Professional Photographer from New York City</h2>
-          <p>Blanditiis praesentium aliquam illum tempore incidunt debitis dolorem magni est deserunt sed qui libero. Qui voluptas amet.</p>
-          <a href="contact.html" class="btn-get-started">Available for hire</a>
+          <h2>Welcome to <span>FilmVerse</span> a Database of multiple film at disposition</h2>
+          <p>You can see the latest film here ! Use the searchbar to see more !</p>
         </div>
       </div>
     </div>
