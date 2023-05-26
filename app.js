@@ -7,12 +7,6 @@ fetch('config.json')
 
     // URL Du Moment
     const API_URL_MOMENT = BASE_URL + '/movie/now_playing' + API_KEY;
-    // URL Populaire
-    const API_URL_POPULAIRE = BASE_URL + '/movie/popular' + API_KEY;
-    // URL A Venir
-    const API_URL_AVENIR = BASE_URL + '/movie/upcoming' + API_KEY;
-    // URL Les Mieux Notés
-    const API_URL_BESTNOTE = BASE_URL + '/movie/top_rated' + API_KEY;
     // URL Recherche
     const searchURL = BASE_URL + '/search/movie' + API_KEY;
     // URL Find Réalisateur
