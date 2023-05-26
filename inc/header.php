@@ -41,20 +41,6 @@
         <i class="bi bi-camera-reels"></i>
         <h1>FilmVerse</h1>
       </a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.php" class="active">Accueil</a></li>
-          <li class="dropdown"><a href="#"><span>Films</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="gallery.php">Populaire</a></li>
-              <li><a href="gallery.php">Du Moment</a></li>
-              <li><a href="gallery.php">À Venir</a></li>
-              <li><a href="gallery.php">Les Mieux Notés</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav><!-- .navbar -->
         <form id="form" class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" id="search">
             <button class="btn btn-outline-success" type="submit">Search</button>
