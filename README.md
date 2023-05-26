@@ -1,5 +1,11 @@
 # FilmVerse
 
+# Comment accéder à FilmVerse ?
+
+Ouvrez votre navigateur web préféré.
+
+Dans la barre d'adresse du navigateur, saisissez l'URL du site FilmVerse (https://s4-8019.nuage-peda.fr/FilmVerse/).
+
 # Comment utiliser FilmVerse ?
 
 Pour utiliser l'application Web FilmVerse, rien de plus simple ! Utilisez la barre de recherche située en haut à gauche pour rechercher le film que vous souhaitez (il doit contenir au moins un des mots du titre du film). La recherche se fait par le titre du film, donc n'essayez pas de saisir le nom d'un acteur !
