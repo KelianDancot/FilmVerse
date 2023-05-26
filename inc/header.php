@@ -55,8 +55,8 @@
           </li>
         </ul>
       </nav><!-- .navbar -->
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" id="search" aria-label="Search">
+        <form id="form" class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" id="search">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
     </div>

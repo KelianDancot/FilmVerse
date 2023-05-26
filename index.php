@@ -8,11 +8,16 @@
       <div class="row justify-content-center">
         <div class="col-lg-6 text-center">
           <h2>Welcome to <span>FilmVerse</span> a Database of multiple film at disposition</h2>
-          <p>You can see the latest film here ! Use the searchbar to see more !</p>
+          <p>You can touch the film on phone to get more information ! <br/> Use the searchbar to see more !</p>
         </div>
       </div>
     </div>
+    <div>
+      <h2 class="py-1">Latest Release</h2>
+    </div>
   </section><!-- End Hero Section -->
+
+  
 
   <!-- ======= Main Section ======= -->
   <main id="main" class="main" data-aos="fade" data-aos-delay="1500"> 

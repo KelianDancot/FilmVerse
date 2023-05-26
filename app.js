@@ -43,15 +43,25 @@ async function getReal(id) {
     return directorList.join(", ");
 }
 
+function truncateText(text, limit) {
+    const words = text.trim().split(' ');
+    const truncated = words.slice(0, limit).join(' ');
+    if (words.length > limit) {
+        return truncated + '...';
+    }
+    return truncated;
+}
+
 async function showMovies(data) {
     main.innerHTML = '';
 
     for (const movie of data) {
-        const { title, poster_path, vote_average, overview, id } = movie;
+        const { title, poster_path, vote_average, release_date, overview, id } = movie;
         const movieElement = document.createElement('div');
         movieElement.classList.add('movie');
         
         const directorName = await getReal(id);
+        const truncatedOverview = truncateText(overview, 70); 
         
         movieElement.innerHTML = `
             <img src="${IMG_URL+poster_path}" alt="${title}">
@@ -64,11 +74,12 @@ async function showMovies(data) {
             <div class="overview">
 
                 <h3>Synopsis</h3>
-                ${overview}
+                <p>${truncatedOverview}</p>
                 <h3>Director</h3>
-                ${directorName}
-                <br/> 
-                <button class="know-more" id="${id}">Know More</button
+                <p>${directorName}</p>
+                <h3>Release Date</h3>
+                <p>${release_date}</p>
+                <br/>
             </div>
         `;
 
@@ -86,14 +97,14 @@ function getColor(vote) {
     }
 }
 
-// form.addEventListener('submit', (e) => {
-//     e.preventDefault();
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-//     const searchTerm = search.ariaValueMax;
+    const searchTerm = search.value;
 
-//     if(searchTerm){
-//         getMovies(searchURL+'&query='+searchTerm)
-//     }else{
-//         getMovies(API_URL_MOMENT)
-//     }
-// })
+    if(searchTerm){
+        getMovies(searchURL+'&query='+searchTerm)
+    }else{
+        getMovies(API_URL_MOMENT)
+    }
+})
