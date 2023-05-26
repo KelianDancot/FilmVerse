@@ -11,6 +11,11 @@ const API_URL_AVENIR = BASE_URL + '/movie/upcoming' + API_KEY;
 const API_URL_BESTNOTE = BASE_URL + '/movie/top_rated' + API_KEY;
 // URL Recherche
 const searchURL = BASE_URL + '/search/movie' + API_KEY;
+// URL Find Réalisateur
+const realURL = BASE_URL + '/movie/'; 
+// Fin URL Réalisateur
+const frealURL = '/credits' + API_KEY
+
 
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 
@@ -27,15 +32,28 @@ function getMovies(url) {
     })
 }
 
-function showMovies(data) {
+async function getReal(id) {
+    const response = await fetch(realURL + id + frealURL);
+    const jsonData = await response.json();
+    const filteredCrew = jsonData.crew.filter(({ job }) => job === "Director");
+    const directorList = [];
+    for (const { name } of filteredCrew) {
+        directorList.push(name);
+    }
+    return directorList.join(", ");
+}
+
+async function showMovies(data) {
     main.innerHTML = '';
 
-    data.forEach(movie => {
-        const {title, poster_path, vote_average, overview, id} = movie;
+    for (const movie of data) {
+        const { title, poster_path, vote_average, overview, id } = movie;
         const movieElement = document.createElement('div');
         movieElement.classList.add('movie');
-        movieElement.innerHTML = 
-        `
+        
+        const directorName = await getReal(id);
+        
+        movieElement.innerHTML = `
             <img src="${IMG_URL+poster_path}" alt="${title}">
             
             <div class="movie-info">
@@ -45,15 +63,17 @@ function showMovies(data) {
 
             <div class="overview">
 
-                <h3>Overview</h3>
+                <h3>Synopsis</h3>
                 ${overview}
+                <h3>Director</h3>
+                ${directorName}
                 <br/> 
                 <button class="know-more" id="${id}">Know More</button
             </div>
-        `
+        `;
 
         main.appendChild(movieElement);
-    })
+    }
 }
 
 function getColor(vote) {
@@ -66,14 +86,14 @@ function getColor(vote) {
     }
 }
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
 
-    const searchTerm = search.ariaValueMax;
+//     const searchTerm = search.ariaValueMax;
 
-    if(searchTerm){
-        getMovies(searchURL+'&query='+searchTerm)
-    }else{
-        getMovies(API_URL_MOMENT)
-    }
-})
+//     if(searchTerm){
+//         getMovies(searchURL+'&query='+searchTerm)
+//     }else{
+//         getMovies(API_URL_MOMENT)
+//     }
+// })
