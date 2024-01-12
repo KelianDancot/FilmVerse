@@ -22,8 +22,6 @@ J'ai conservé les couleurs ainsi que les styles de certains éléments.
 
 Ensuite, j'ai créé mon compte sur le site de TMDB et j'ai récupéré la clé d'API et l'URL de base utilisés pour toutes les requêtes à l'API.
 
-![alt text](https://media.discordapp.net/attachments/990649587956056165/1111629477542371338/Capture_decran_2023-05-25_105532.png?width=1068&height=671)
-
 Ensuite, j'ai commencé par définir une URL par défaut pour récupérer les derniers films sortis et les afficher sur la page d'accueil.
 
 ![alt text](https://media.discordapp.net/attachments/990649587956056165/1111631678104940594/image.png?width=581&height=671)
